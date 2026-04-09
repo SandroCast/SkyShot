@@ -12,10 +12,18 @@ Para testar no seu celular ou emulador, siga estes passos:
    npm install --legacy-peer-deps
    ```
    *(O flag `--legacy-peer-deps` ajuda a resolver conflitos de versão entre o React 18 e algumas bibliotecas do Expo).*
-3. **Instale o Expo CLI** (se nÃ£o tiver):
+3. **Instale o Expo CLI** (se não tiver):
    ```bash
    npm install -g expo-cli
    ```
+
+   **DICA DE OURO (Se der erro de módulo faltando):**
+   Se o comando `npx expo start` reclamar de algum módulo faltando (como 'metro-config'), rode:
+   ```bash
+   npx expo install --fix
+   ```
+   Isso fará com que o Expo verifique todas as versões e instale o que estiver faltando para a sua versão específica do SDK.
+
 4. **Inicie o projeto**:
    ```bash
    npx expo start
