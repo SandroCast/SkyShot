@@ -17,12 +17,13 @@ Para testar no seu celular ou emulador, siga estes passos:
    npm install -g expo-cli
    ```
 
-   **DICA DE OURO (Se der erro de módulo faltando):**
-   Se o comando `npx expo start` reclamar de algum módulo faltando (como 'metro-config'), rode:
+   **DICA DE OURO (Se der erro de módulo 'App' não encontrado):**
+   Eu criei um arquivo `App.tsx` na raiz que serve como ponte para o `src/App.tsx`. Isso resolve o erro de "Unable to resolve module ../../App" que o Expo Go às vezes apresenta.
+
+   **Se o erro persistir, rode:**
    ```bash
    npx expo install --fix
    ```
-   Isso fará com que o Expo verifique todas as versões e instale o que estiver faltando para a sua versão específica do SDK.
 
 4. **Inicie o projeto**:
    ```bash
