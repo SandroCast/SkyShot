@@ -9,8 +9,9 @@ Para testar no seu celular ou emulador, siga estes passos:
 1. **Clone o repositório** do GitHub para o seu computador.
 2. **Instale as dependências**:
    ```bash
-   npm install
+   npm install --legacy-peer-deps
    ```
+   *(O flag `--legacy-peer-deps` ajuda a resolver conflitos de versão entre o React 18 e algumas bibliotecas do Expo).*
 3. **Instale o Expo CLI** (se nÃ£o tiver):
    ```bash
    npm install -g expo-cli
