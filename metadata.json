@@ -1,0 +1,5 @@
+{
+  "name": "SkyShot - Drone Services Marketplace",
+  "description": "A mobile marketplace for drone pilots to showcase their work and for clients to hire professional aerial filming services.",
+  "requestFramePermissions": ["camera", "geolocation"]
+}
