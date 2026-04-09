@@ -13,6 +13,9 @@ export default defineConfig(({mode}) => {
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
+        'react-native/Libraries/Utilities/codegenNativeComponent': path.resolve(__dirname, 'src/lib/codegenNativeComponent.js'),
+        'react-native/Libraries/Renderer/shims/ReactNative': 'react-native-web/dist/index',
+        'react-native/Libraries/Image/AssetRegistry': 'react-native-web/dist/modules/AssetRegistry',
         'react-native': 'react-native-web',
       },
       extensions: ['.web.tsx', '.web.ts', '.tsx', '.ts', '.js'],
